@@ -1,0 +1,39 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+.post {
+	position: relative;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.post-content {
+	padding: 1.5rem 0;
+
+	.entry-title {
+		line-height: 1.2;
+	}
+
+	.entry-meta {
+		font-size: 0.75rem;
+		letter-spacing: 0.05rem;
+		color: #d1d1d1;
+		line-height: 1;
+	}
+}

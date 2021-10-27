@@ -1,0 +1,53 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.arrows {
+	a {
+		padding: 0.875rem 1.25rem;
+		border-radius: 0.5rem;
+		background-color: #fdf9f1;
+		color: #dbb6a9;
+
+		&:hover {
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+}
+
+.slick-slide {
+	height: auto;
+}
+
+marquee {
+	position: absolute;
+	font-size: 1.5rem;
+	top: 40%;
+	color: $white;
+	z-index: -1;
+
+	span {
+		margin-right: 0.875rem;
+	}
+
+	&.bg-success {
+		transform: rotate(356deg);
+	}
+
+	&.bg-white {
+		transform: rotate(4deg);
+	}
+}
+
+.sale {
+	padding: 8rem 0;
+
+	h2 {
+		color: $white;
+		font-size: 9.6875rem;
+	}
+}

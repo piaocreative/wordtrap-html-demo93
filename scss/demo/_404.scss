@@ -1,0 +1,41 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+#error-404 {
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+}
+
+.error-logo {
+    font-size: 18rem;
+    color: $white;
+}
+
+.error-sidebar {
+    ul {
+        display: inline-block;
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ffffff;
+
+            span {
+                font-size: 0.75rem;
+                font-weight: 300;
+                color: $white;
+                line-height: 2;
+            }
+
+            a {
+                font-weight: 300;
+                color: $white;
+                font-size: 1.3125rem;
+            }
+        }
+    }
+}

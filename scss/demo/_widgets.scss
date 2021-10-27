@@ -1,0 +1,172 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	.widget-title {
+		color: #413f3f;		
+		font-size: 0.75rem;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		font-family: $body-font;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			padding: 0;
+			list-style: none;
+
+			li {
+				padding: 0 0.25rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					color: rgba($color: #ffff, $alpha: 0.5);		
+					background-color: #1f1f1f;
+					display: inline-block;
+					line-height: 1.8125rem;
+					width: 2.8125rem;
+					height: 2.8125rem;		
+					vertical-align: middle;
+					text-align: center;
+
+					@include transition(all 0.3s ease-in-out);
+		
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+						padding: 0.5rem;
+						font-size: 1.125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+
+				margin-bottom: 0.7rem;
+
+				a {
+					color: #9d9d9d;
+					font-weight: 300;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				width: 4.2rem;
+				height: 3rem;
+				background-color: #1f1f1f;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				@include media-breakpoint-down(sm) {
+					width: 4rem;
+				}
+
+				&.visa {
+					background-image: url(../images/payments/visa.png);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.png);
+				}
+
+				&.express {
+					background-image: url(../images/payments/express.png);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/mastercard.png);
+				}
+
+				&.jcb {
+					background-image: url(../images/payments/jcb.png);
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			.contact {
+				border-bottom: 1px solid #262626;
+				padding: 1.125rem 0;
+
+				span {
+					font-size: 0.75rem;
+					font-weight: 300;
+					color: #413f3f;
+				}
+	
+				a {
+					color: $white;		
+					font-size: 1.625rem;
+					font-weight: 300;
+					letter-spacing: 0.1rem;
+				}
+	
+				p {
+					font-weight: 300;
+					color: #5e5e5e;
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			#widet-subscribe-form {
+				input {
+					background-color: #1f1f1f;
+				}
+			}
+		}
+	}
+}
